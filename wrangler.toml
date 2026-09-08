@@ -1,0 +1,14 @@
+name = "shopping-order-store"
+main = "src/index.js"
+compatibility_date = "2026-09-06"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "shop-db"
+database_id = "fa62ef3a-61ba-4b38-a606-15803f0852d2"
+migrations_dir = "migrations"

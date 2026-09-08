@@ -1,0 +1,1 @@
+(async()=>{const code=new URLSearchParams(location.search).get('code');const p=await fetch('/api/product/'+encodeURIComponent(code)).then(r=>r.json());document.title=p.name;product.innerHTML=`<h1>${p.name}</h1><p>${p.description||''}</p><h2>₹${p.price}</h2><p>Product Code: ${p.code}</p><a href="/order.html?code=${encodeURIComponent(p.code)}">ORDER NOW</a>`})()
